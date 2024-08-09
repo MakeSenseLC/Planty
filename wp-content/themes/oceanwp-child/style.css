@@ -10,6 +10,13 @@ Version: 3.5.8.1722423726
 Updated: 2024-07-31 11:02:06
 
 */
-.cmd {
-    background-color: red; 
-}
+.cmd a {
+    color : #ffffff !important;
+    background-color: #DC9F96;
+    padding-left: 61px !important;
+    padding-right: 61px !important;
+    }
+
+    .cmd :hover {
+        background-color: #C02E44;
+    }
