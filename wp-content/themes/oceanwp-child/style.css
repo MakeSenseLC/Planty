@@ -12,11 +12,112 @@ Updated: 2024-07-31 11:02:06
 */
 .cmd a {
     color : #ffffff !important;
+    font-weight: 700 !important;
     background-color: #DC9F96;
     padding-left: 61px !important;
     padding-right: 61px !important;
     }
 
-    .cmd :hover {
+.cmd :hover {
         background-color: #C02E44;
     }
+
+.nousrencontrer :hover {
+    font-weight: 700 !important;
+}
+
+.leafCanContainer {
+    position: relative;
+    max-width: 50%;
+    min-width: 700px;
+    height: 618px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leafCanContainer > .leafLeft,
+.leafCanContainer > .leafRight {
+    position: relative;
+    width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+.leafCanContainer > .leafLeft {
+    z-index: 0;
+    margin-right: -3%;
+    padding-bottom: 3%;
+}
+
+.leafCanContainer > .leafRight {
+    z-index: 1;
+    margin-left: -3%;
+    padding-bottom: 3%;
+}
+
+.leafCanContainer > .can {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+}
+
+.leafcanContainer img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* PARTIE RESPONSIVE */
+
+@media (max-width: 768px) {
+    .leafCanContainer {
+        max-width: 80%;
+        min-width: auto;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centrage vertical de tous les éléments */
+    }
+
+    .leafCanContainer > .leafLeft,
+    .leafCanContainer > .leafRight {
+        position: relative; /* Relative pour rester dans le flux */
+        width: 50%;
+        height: auto;
+    }
+
+    .leafCanContainer > .leafLeft {
+        z-index: 0;
+        margin-right: -3%; /* Chevauchement léger */
+        align-self: center; /* Assure que l'image reste centrée */
+    }
+
+    .leafCanContainer > .leafRight {
+        z-index: 1;
+        margin-left: -3%; /* Chevauchement léger */
+        align-self: center; /* Assure que l'image reste centrée */
+    }
+
+    .leafCanContainer > .can {
+        position: absolute; /* Absolue pour un positionnement parfait */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centrage horizontal et vertical */
+        z-index: 2;
+        width: 60%; /* Ajuste la largeur */
+        height: auto;
+        max-height: 100%;
+    }
+
+    .leafcanContainer img {
+        width: 100%;
+        height: auto;
+    }
+}
