@@ -100,4 +100,62 @@ Updated: 2024-07-31 11:02:06
     align-items: center !important;
 }
 
+/* PAGE COMMANDE */
+
+.order {
+    color: #ffffff !important;
+    text-transform:none !important;
+    font-weight: 700 !important;
+}
+
+.commande {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    border-bottom: #ffffff solid 1px;
+    padding-bottom: 16px;
+}
+
+.parfum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.compteur {
+    background-color: #ffffff !important;
+    width: 40px !important;
+    height: 56px;
+}
+
+.wpcf7-form-control-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infoslivraison {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    margin-bottom: 44px;
+}
+
+.infoslivraison label {
+    color: #ffffff;
+}
+
+.infoslivraison input {
+    margin-top: 10px;
+}
+.infos {
+    border-right: 1px solid #ffffff;
+    padding-right: 30px;
+    width: 50%;
+}
+
+.livraison {
+    padding-left: 30px;
+    width: 50%;
+}
 /* PARTIE RESPONSIVE */
