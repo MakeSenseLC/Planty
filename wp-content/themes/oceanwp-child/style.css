@@ -159,3 +159,97 @@ Updated: 2024-07-31 11:02:06
     width: 50%;
 }
 /* PARTIE RESPONSIVE */
+
+@media (max-width: 797px) {
+
+    .menu-item-28 :hover {
+        background-color: #C02E44 !important;
+    }
+
+    .leafCanContainer {
+        max-width: 80%;
+        min-width: auto;
+        height: auto; /* Permet d'ajuster la hauteur en fonction du contenu */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Empêche tout débordement */
+    }
+
+    .leafCanContainer > .leafLeft,
+    .leafCanContainer > .leafRight {
+        width: 40%; /* Ajustement de la largeur des feuilles */
+        height: auto;
+        position: relative; /* Garder les feuilles dans le flux */
+        align-self: center; /* Aligne verticalement les feuilles */
+    }
+
+    .leafCanContainer > .leafLeft {
+        z-index: 0;
+        margin-right: -5%; /* Chevauchement léger à droite */
+    }
+
+    .leafCanContainer > .leafRight {
+        z-index: 1;
+        margin-left: -5%; /* Chevauchement léger à gauche */
+    }
+
+    .leafCanContainer > .can {
+        position: absolute; /* Positionnement de la canette */
+        top: 50%; /* Centrer verticalement */
+        left: 50%; /* Centrer horizontalement */
+        transform: translate(-50%, -50%); /* Ajuster pour le centrage */
+        z-index: 2;
+        width: 40%; /* Ajustement de la largeur de la canette */
+        max-height: 80%; /* Limite la hauteur pour éviter le débordement */
+        object-fit: contain; /* Garde la canette entière sans la couper */
+    }
+
+    .leafcanContainer img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Formulaire de commande */
+
+    .order {
+        font-size: 24px !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .commande {
+        flex-direction: column;
+    }
+
+    .parfum {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .infoslivraison {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .infos {
+        border-right: none;
+        border-bottom: 1px solid white;
+        padding-right: none;
+        width: 100%;
+    }
+
+    .livraison {
+        padding-left: 0px;
+        padding-top: 30px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
