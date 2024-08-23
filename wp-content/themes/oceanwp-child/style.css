@@ -29,52 +29,38 @@ Updated: 2024-07-31 11:02:06
     font-size: 13px !important;
 }
 
+.admin:hover {
+    font-weight: 700 !important;
+    font-size: 13px !important; 
+}
+
 /* PAGE D'ACCUEIL */
 
 .leafCanContainer {
     position: relative;
-    max-width: 50%;
-    min-width: 700px;
-    height: 618px;
-    display: flex;
-    justify-content: center;
+    width: 80%;
+    height: 620px;
     align-items: center;
 }
 
-.leafCanContainer > .leafLeft,
-.leafCanContainer > .leafRight {
-    position: relative;
-    width: 50%;
-    height: auto;
-    align-self: center;
-}
-
-.leafCanContainer > .leafLeft {
-    z-index: 0;
-    margin-right: -3%;
-    padding-bottom: 3%;
-}
-
-.leafCanContainer > .leafRight {
-    z-index: 1;
-    margin-left: -3%;
-    padding-bottom: 3%;
-}
-
-.leafCanContainer > .can {
+.can {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: auto;
-    height: 100%;
-    max-height: 100%;
 }
 
-.leafcanContainer img {
-    width: 100%;
-    height: auto;
+.leafLeft {
+    padding-top: 6%;
+}
+
+.leafRight {
+    padding-top: 6%;
+}
+
+.temoin {
+    width: 70%;
 }
 
 /* PAGE CONTACT */
@@ -100,6 +86,24 @@ Updated: 2024-07-31 11:02:06
     align-items: center !important;
 }
 
+.submit p :hover {
+    background-color: #C02E44 !important;
+}
+
+.wpcf7-spinner {
+    display: none;
+}
+
+.wpcf7-textarea {
+    z-index: 1;
+}
+
+.fleur {
+    position: absolute;
+    z-index: 0;
+    top: 400px;
+    left: -90px;
+}
 /* PAGE COMMANDE */
 
 .order {
@@ -158,57 +162,79 @@ Updated: 2024-07-31 11:02:06
     padding-left: 30px;
     width: 50%;
 }
+
+.elementor-element-a1fb2cd {
+    padding: 0;
+}
+
+.wpcf7-response-output {
+    color: #ffffff;
+}
+
 /* PARTIE RESPONSIVE */
+
+@media (max-width: 918px) {
+
+    .infoslivraison {
+        flex-direction: column;
+    }
+
+    .infos {
+        width: 100%;
+        border-right: none;
+        border-bottom: #ffffff solid 1px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        padding-right: 0px;
+    }
+
+    .livraison {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
 
 @media (max-width: 797px) {
 
-    .menu-item-28 :hover {
-        background-color: #C02E44 !important;
-    }
+    /*postion de la canette et des feuilles*/
 
     .leafCanContainer {
-        max-width: 80%;
-        min-width: auto;
-        height: auto; /* Permet d'ajuster la hauteur en fonction du contenu */
         position: relative;
-        display: flex;
-        justify-content: center;
+        width: 80%;
+        height: 420px;
         align-items: center;
-        overflow: hidden; /* Empêche tout débordement */
     }
-
-    .leafCanContainer > .leafLeft,
-    .leafCanContainer > .leafRight {
-        width: 40%; /* Ajustement de la largeur des feuilles */
-        height: auto;
-        position: relative; /* Garder les feuilles dans le flux */
-        align-self: center; /* Aligne verticalement les feuilles */
-    }
-
-    .leafCanContainer > .leafLeft {
-        z-index: 0;
-        margin-right: -5%; /* Chevauchement léger à droite */
-    }
-
-    .leafCanContainer > .leafRight {
-        z-index: 1;
-        margin-left: -5%; /* Chevauchement léger à gauche */
-    }
-
-    .leafCanContainer > .can {
-        position: absolute; /* Positionnement de la canette */
-        top: 50%; /* Centrer verticalement */
-        left: 50%; /* Centrer horizontalement */
-        transform: translate(-50%, -50%); /* Ajuster pour le centrage */
+    
+    .can {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 2;
-        width: 40%; /* Ajustement de la largeur de la canette */
-        max-height: 80%; /* Limite la hauteur pour éviter le débordement */
-        object-fit: contain; /* Garde la canette entière sans la couper */
+    }
+    
+    .leafLeft {
+        margin-top: 10%;
+        width: 100%;
+        margin-right: -5%;
+    }
+    
+    .leafRight {
+        margin-top: 10%;
+        width: 100%;
+        margin-left: -5%;
     }
 
-    .leafcanContainer img {
-        width: 100%;
-        height: auto;
+    /*Images témoins*/
+
+    .temoin {
+        width: 40%;
+    }
+
+    /*Effet de bouton du menu burger*/
+
+    .menu-item-28 :hover {
+        background-color: #C02E44 !important;
     }
 
     /* Formulaire de commande */
@@ -219,6 +245,26 @@ Updated: 2024-07-31 11:02:06
 }
 
 @media (max-width: 540px) {
+
+/*postion de la canette et des feuilles*/  
+
+.leafCanContainer {
+    height: 220px;
+    align-items: center;
+}
+
+.leafleft {
+    margin-top: 0;
+    width: 60%;
+}
+
+.leafleft {
+    margin-top: 0;
+    width: 60%;
+}
+
+/* Formulaire de commande */
+
     .commande {
         flex-direction: column;
     }

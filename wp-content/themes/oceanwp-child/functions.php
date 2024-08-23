@@ -22,3 +22,24 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+function ajouter_lien_admin_menu($items, $args) {
+    if (is_user_logged_in()) {
+        // Décomposer le menu en éléments <li>
+        $elements = explode('</li>', $items);
+
+        // Le lien Admin à insérer
+        $lien_admin = '<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="' . admin_url() . '" class="admin wpr-menu-item wpr-pointer-item">Admin</a></li>';
+
+        // Insérer le lien Admin après "Nous rencontrer" (supposons que "Nous rencontrer" est le premier élément)
+        array_splice($elements, 1, 0, $lien_admin);
+
+        // Recomposer les éléments en une seule chaîne
+        $items = implode('</li>', $elements);
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'ajouter_lien_admin_menu', 10, 2);
+
+
+?>
