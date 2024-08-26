@@ -253,14 +253,16 @@ Updated: 2024-07-31 11:02:06
     align-items: center;
 }
 
-.leafleft {
-    margin-top: 0;
-    width: 60%;
+.leafLeft {
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 40%;
 }
 
-.leafleft {
-    margin-top: 0;
-    width: 60%;
+.leafRight {
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 40%;
 }
 
 /* Formulaire de commande */
