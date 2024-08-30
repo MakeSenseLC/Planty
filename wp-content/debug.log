@@ -13,3 +13,5 @@
 [23-Aug-2024 08:30:36 UTC] Utilisateur connecté
 [23-Aug-2024 08:30:40 UTC] Utilisateur connecté
 [23-Aug-2024 08:31:36 UTC] Utilisateur connecté
+[30-Aug-2024 09:34:18 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\shada\Local Sites\planty\app\public\wp-includes\class-wpdb.php on line 1982
+[30-Aug-2024 09:34:24 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\shada\Local Sites\planty\app\public\wp-includes\class-wpdb.php on line 1982
